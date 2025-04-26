@@ -7,6 +7,6 @@ import org.knit.solutions.Solution;
 public class Task18 implements Solution {
     @Override
     public void execute() {
-
+        System.out.println("start");
     }
 }
