@@ -14,8 +14,8 @@ public class StringExample {
         System.out.println("Длина строки str1: " + length); // 13
 
         // Получение символа по индексу
-        char character = str1.charAt(0);
-        System.out.println("Первый символ строки str1: " + character); // 'H'
+        char myCharacter = str1.charAt(0);
+        System.out.println("Первый символ строки str1: " + myCharacter); // 'H'
 
         // Сравнение строк
         boolean equals = str1.equals("Hello, World!");

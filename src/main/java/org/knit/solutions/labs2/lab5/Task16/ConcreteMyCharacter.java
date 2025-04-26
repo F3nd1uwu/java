@@ -1,9 +1,9 @@
 package org.knit.solutions.labs2.lab5.Task16;
 
-public class ConcreteCharacter implements Character {
-    private char charCode; // Внутреннее состояние
+public class ConcreteMyCharacter implements MyCharacter {
+    private final Character charCode; // Внутреннее состояние
 
-    public ConcreteCharacter(char charCode) {
+    public ConcreteMyCharacter(Character charCode) {
         this.charCode = charCode;
     }
 

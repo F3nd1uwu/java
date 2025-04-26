@@ -4,19 +4,19 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class CharacterFactory {
-    private static final Map<java.lang.Character, ConcreteCharacter> characters = new HashMap<>();
+    private static final Map<Character, MyCharacter> characters = new HashMap<>();
 
-    public static Character getCharacter(char charCode) {
+    public static MyCharacter getCharacter(Character charCode) {
         // Проверяем, есть ли уже такой символ
-        Character character = characters.get(charCode);
+        MyCharacter myCharacter = characters.get(charCode);
 
-        if (character == null) {
+        if (myCharacter == null) {
             // Если нет - создаем новый
-            character = new ConcreteCharacter(charCode);
-            characters.put(charCode, (ConcreteCharacter) character);
+            myCharacter = new ConcreteMyCharacter(charCode);
+            characters.put(charCode, myCharacter);
             System.out.println("Создан новый символ: " + charCode);
         }
 
-        return character;
+        return myCharacter;
     }
 }

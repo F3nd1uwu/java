@@ -50,9 +50,9 @@ import java.io.IOException;
 public class TextFileReaderExample {
     public static void main(String[] args) {
         try (FileReader reader = new FileReader("output.txt")) {
-            int character;
-            while ((character = reader.read()) != -1) {
-                System.out.print((char) character);
+            int myCharacter;
+            while ((myCharacter = reader.read()) != -1) {
+                System.out.print((char) myCharacter);
             }
         } catch (IOException e) {
             System.out.println("Ошибка чтения из файла: " + e.getMessage());
